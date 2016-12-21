@@ -1,0 +1,48 @@
+== README
+
+This README would normally document whatever steps are necessary to get the
+application up and running.
+
+Things you may want to cover:
+
+* Ruby version
+ruby 2.3.1p112
+
+* Rails version
+Rails 4.0.0
+
+* Start the API service
+rails s -p 3000
+
+* Access the service
+* Identify the device currently associated with a given address (GET)
+* http://localhost:3000/device/<ip_address>
+http://localhost:3000/device/1.2.3.4
+
+* If the address is not currently assigned
+* http://localhost:3000/device/<ip_address>
+http://localhost:3000/device/1.2.3.20
+
+* Assign an address to a device (POST)
+* JSON input :query => { ip_address: '1.2.3.4', device_name: 'Device5'}
+http://localhost:3000/addresses/assign
+
+* System dependencies
+
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...
+
+
+Please feel free to use a different markup language if you do not plan to run
+<tt>rake doc:app</tt>.
